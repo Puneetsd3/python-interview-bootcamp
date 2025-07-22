@@ -1,0 +1,6 @@
+Q1: Why prefer VARCHAR(n) vs TEXT? When does it matter?
+- VARCHAR(n) lets you enforce a max length. Use when you know or want to limit user input (e.g. usernames). May have slight performance benefits, helps with data integrity.
+- TEXT is for variable/unknown-sized data (comments, posts).
+
+Q2: What does SERIAL actually do in Postgres?
+- SERIAL auto-generates a sequence and sets the default for the column to the next value of that sequence—it's used for creating auto-incrementing IDs.
